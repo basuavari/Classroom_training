@@ -1,0 +1,77 @@
+*****Bitwise Operators******
+
+Bitwise operators works on Bits and performs bit by bit operation.
+
+1.bitwise AND Operator	(&)
+2.Bitwise OR Operator	(|)
+3.Bitwise XOR Operator	(^)
+4.One's complimentry Operator	(~)
+5.Left shift Operator	(<<)
+6.Right shift Operator	(>>)
+
+
+
+Truth Table
+
+A	B	A&B	A|B	A^B
+0	0	0	0	0
+0	1	0	1	1
+1	0	0	1	1
+1	1	1	1	1
+
+
+Lets Asuume 
+A=60   and B=13
+
+A=60=00111100
+B=13=00001101
+
+
+A&B = 00001100 =12
+A|B = 00111101 =61
+A^B = 00110001 = 49
+~A  = 11000011 = -61
+A<<2= 11110000 =240
+A>>2= 00001111 =15
+
+
+Simple Program for Bitwise Operator 
+
+	#include <stdio.h>
+	int main()
+	{
+
+		int A=60, B=13, c;
+
+		C=A&B;
+		printf ("value of c1 %d \n", c);
+
+
+		C=A|B;
+		printf ("value of c2 %d \n", c);
+
+
+		C=A^B;
+		printf ("value of c3 %d \n", c);
+
+
+		C=~A;
+		printf ("value of c4 %d \n", c);
+
+
+		C=A<<2;
+		printf ("valuve of c5 %d \n", c);
+
+
+		C=A>>2;
+		printf ("valuve of c6 %d \n", c);
+		
+	return 0;
+
+	}
+
+
+
+
+
+
